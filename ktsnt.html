@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        function isprime(n){
+        let flag = 1;
+        let i = 2;
+        while(i <n){
+        if( n%i==0 ) {
+        flag = 0;
+        break;
+    }
+        i++;
+    }
+        return flag;
+    }
+        let n= prompt(" nhap mot so n: ");
+        let i = 2, check=0, result ="";
+        while ( i < n){
+        check = isprime(i);
+        if( check == 1 ) result += i + " ";
+        i++;
+    }
+        console.log("Tất cả các số nguyên nhỏ hơn " + n + " là: " + result);
+</script>
+</body>
+</html>
